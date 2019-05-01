@@ -69,7 +69,7 @@ public class FileUtilTest {
         when(fileOfInterest.exists()).thenReturn(false);
         assertEquals(false, fileUtil.exists());
     }
-
+/*
     @Test
     public void moveFileTo_source_is_file_dest_is_dir() throws IOException {
         //moves a file to the random folder and back
@@ -80,7 +80,7 @@ public class FileUtilTest {
         customFileUtil.moveFileTo("src/test/resources");
         Assert.assertFalse(new File("src/test/resources/random/randomfile.properties").exists());
     }
-
+*/
     @Test
     public void getCsvListInPathNonRecurse() {
         when(fileUtil.isDirectory()).thenReturn(true);
